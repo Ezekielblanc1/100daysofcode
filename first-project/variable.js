@@ -24,3 +24,25 @@ let score = 100;
 let totalScore = 35;
 let finalScore = totalScore/score
 console.log(finalScore);
+
+//if statements
+
+let age = 65;
+
+if(age<=17){
+    console.log("Discount for child")
+}
+if(age>=65){
+    console.log("Discount for senior")
+}
+
+
+//Variable scope 
+
+let name = "Mark";
+if(true){
+    let name = "Titus"
+    console.log(name);//Prints Titus
+}
+console.log(name)//Prints Mark
+
