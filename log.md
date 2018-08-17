@@ -8,3 +8,26 @@
 
 
 **Link to work**: [Andrew Mead Modern Js Bootcamp](https://www.udemy.com/modern-javascript/?couponCode=LEARNING)
+
+##Day 1 August 14 ,Tuesday
+
+**Today's work**: Continued with variable scope
+
+**Thoughts** The scope of a variable is where a variable can be acessed,so you can't declare a variable anywhere and expect to access it if it is not in scope or within the parent scope
+
+## Day 2 August 15, Wednesday
+
+**Today's work**: Started working with functions
+
+**Thoughts** Functions are actually subprograms that can be used and called in another program reducing code duplication
+
+## Day 3 August 16, Thursday 
+
+**Today's work**: Worked on Multiple and default arguments in functions and Template strings
+ **Thoughts** Learnt how to work with multiple arguments and how to pass default arguments and how to use template strings to join strings together for netter formatting creating neater codes
+
+ ## Day 4 August 17, Friday
+
+ **Today's work** Started working with objects
+
+ **Thoughts** Objects allows us to store related piece of information in a single central location which makes use of key value pairs
