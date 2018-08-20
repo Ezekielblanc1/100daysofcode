@@ -31,3 +31,8 @@
  **Today's work** Started working with objects
 
  **Thoughts** Objects allows us to store related piece of information in a single central location which makes use of key value pairs
+
+ ##Days 5 August 18, Saturday
+ **Today's work** Continued with Javascript object methods
+ **Thoughts** Methods in objects are object properties whose value is a function, inside the method we have access to "this" references the object the method is defined on, it also helps to access properties inside an object, also working with const which means constant it says that you can't reassign a constant variable after it has been created, when working with object you can manipulate the object but not reassign the object 
+ Also going back to var based variables which are function scope and not block scoped,when you create a variable with var,its declaration gets hoisted to the top
