@@ -40,3 +40,13 @@
  ##Day 6 August 19, Sunday
  **Todays work** Started learning how to work with arrays
  **Thoughts**Arrays allows us to store list of information, the index of an array is the position of the array we want to access which is zero based, the shift and unshift manipulates the array from the start, while shift and unshift starts from the first
+
+ ##Day 7 August 27, Monday
+ **Todays work** Looping over an array
+ **Thoughts** There are array methods that allow you to loop through an array without using the normal for loop such as The for each method a function which is called for every item in the array
+
+ ##Day 8 August 28 ,Tuesday -Day 14 September 3
+
+ **work** Searching An array[Array Methods]
+ **Thoughts** The Array.indexof Is a useful array method to locate an item in an array, it returns the index of the array if it exists but returns negative one if it does not exist, i also learnt that when comparing two objects, it does not matter if they have the same object, What makes two object equal is if they are the same object in memory, FindIndex if it finds a match it stops running and returns a match, I also looked into the Array find method that finds the search element instead of the index as to that of the findIndex that meets the search criteria but it returns the first value if there are alot of options that meet the criteria.
+ Also saw how to sort an array using the array.sort method,in comparing two alphabets the capitalization is important eg "A" will come before "a"("A" < "a");
