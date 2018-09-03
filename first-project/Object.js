@@ -34,3 +34,42 @@ console.log(otherBookSummary.summary);
 
 //Object References
 
+const salesStore = {
+  owner: "Ezekiel blanc",
+  expenses: [],
+  income: [],
+  addExpense: function(desc, amount){
+    this.expenses.push({
+      desc: desc,
+      amount: amount
+    })
+  },
+  addIncome: function(desc, amount){
+    this.income.push({
+      desc: desc,
+      amount: amount
+    })
+  },
+  getAccountSummary: function(){
+    let totalExpenses = 0
+    let totalIncome = 0
+    let accountBalance = 0
+
+
+    this.expenses.forEach(function(expense){
+      totalExpenses = totalExpenses + expense.amount
+    })
+    this.income.forEach(function(income){
+      totalIncome = totalIncome + income.amount
+    })
+
+    accountBalance = totalIncome - totalExpenses
+    return `${this.owner} has a balance of ${accountBalance}. ${totalIncome} in income ${totalExpenses} in expenses`
+  }
+}
+
+salesStore.addExpense("Weavon", 1200);
+salesStore.addExpense("Bags", 100);
+salesStore.addExpense("RechargeCard", 200);
+salesStore.addIncome("Contract", 3400)
+console.log(salesStore.getAccountSummary())
