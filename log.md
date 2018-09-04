@@ -50,3 +50,7 @@
  **work** Searching An array[Array Methods]
  **Thoughts** The Array.indexof Is a useful array method to locate an item in an array, it returns the index of the array if it exists but returns negative one if it does not exist, i also learnt that when comparing two objects, it does not matter if they have the same object, What makes two object equal is if they are the same object in memory, FindIndex if it finds a match it stops running and returns a match, I also looked into the Array find method that finds the search element instead of the index as to that of the findIndex that meets the search criteria but it returns the first value if there are alot of options that meet the criteria.
  Also saw how to sort an array using the array.sort method,in comparing two alphabets the capitalization is important eg "A" will come before "a"("A" < "a");
+
+ ##Day 15 September 4
+ **Todays Work** DOM 
+ **Thoughts** DOM which stands for document object model is a object in javascript that models the html document, the object in the dom is the document object it is not self created but it is provided by the browser, we also get elements in the DOM by quering it eg by using document.querySelector which matches the first match it finds. I also looked at textContent which is a property used  to read value the dom element
