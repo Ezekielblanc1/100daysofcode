@@ -54,3 +54,4 @@
  ##Day 15 September 4
  **Todays Work** DOM 
  **Thoughts** DOM which stands for document object model is a object in javascript that models the html document, the object in the dom is the document object it is not self created but it is provided by the browser, we also get elements in the DOM by quering it eg by using document.querySelector which matches the first match it finds. I also looked at textContent which is a property used  to read value the dom element
+ Also looked at how to add elements to the DOM using the document.createElement and appendChild and how to handle user interactions via event handlers,events which is basically what the user does. The event is called with an argument which is useful when you want to do something with the element that the event is fired on
