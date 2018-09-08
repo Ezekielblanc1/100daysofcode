@@ -31,3 +31,12 @@ const eachTodo = myTodos.forEach(function(todo){
   para.textContent = todo.text
   document.querySelector('body').appendChild(para)
 })
+
+
+document.querySelector('#add-btn').addEventListener('click', function(e){
+  console.log('Todo added')
+})
+
+document.querySelector('#add-todo').addEventListener('input', function(e){
+  console.log(e.target.value)
+})
