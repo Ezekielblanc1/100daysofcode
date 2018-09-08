@@ -1,9 +1,4 @@
-const paragraph = document.querySelectorAll('p');
-paragraph.forEach(function(para){
-  // para.textContent = '********'
-  console.log(para.textContent)
-})
-//Add elements via the DOM
+
 
 const heading = document.createElement('h2');
 heading.textContent = "Second heading"
@@ -20,6 +15,40 @@ document.querySelector('#second-btn').addEventListener('click', function(e){
   })
 })
 
+
+const movies = [
+  {
+    name: "Things fall apart",
+    producer: "John Doe"
+  },
+  {
+    name: "Many years Ago",
+    producer: "Mark ken"
+  },
+  {
+    name: "Gods not Dead",
+    producer: "Resy Duke"
+  }
+]
+
+const filters = {
+  searchText: ''
+}
+
+const renderMovies = function(movie,filters){
+  const filteredMovies = movies.filter(function(movie){
+    return movie.name.toLowerCase().includes(filters.searchText.toLowerCase())
+  })
+  
+  filteredMovies.forEach(function(movie){
+    const movieEl = document.createElement('p')
+    movieEl.textContent = movie.name
+    document.querySelector('body').appendChild(movieEl)
+  })
+}
+renderMovies(movies,filters)
+
 document.querySelector('#search-text').addEventListener('input', function(e){
-  console.log(e.target.value)
+  filters.searchText = e.target.value
+  renderMovies(movies,filters)//Function to re-render when the input changes
 })
