@@ -17,26 +17,48 @@ const myTodos = [
   }
 ]
 
+const filters = {
+  serachText: ''
+}
 
-const incompleteTodos = myTodos.filter(function(todo){
-  return todo.completed === false
+
+const renderTodos = function(todos, filters){
+  let filteredTodos = myTodos.filter(function(todo){
+    return todo.text.toLowerCase().includes(filters.serachText.toLowerCase())
+  })
+  const incompleteTodos = filteredTodos.filter(function(todo){
+    return !todo.completed
+  })
+
+  document.querySelector('#todos').innerHTML = ''
+
+  let topHeading = document.createElement('h2')
+  topHeading.textContent = `You have ${incompleteTodos.length} todos left`
+  document.querySelector('#todos').appendChild(topHeading)
+
+
+  filteredTodos.forEach(function(todo){
+    const todoEl = document.createElement('p')
+    todoEl.textContent = todo.text
+    document.querySelector('#todos').appendChild(todoEl)
+  })
+}
+
+
+renderTodos(myTodos, filters)
+
+
+document.querySelector('#add-todo').addEventListener('input', function(e){
+  // console.log(e.target.value)
+  filters.serachText = e.target.value
+  renderTodos(myTodos, filters)
 })
 
-let topHeading = document.createElement('h2')
-topHeading.textContent = `You have ${incompleteTodos.length} todos left`
-document.querySelector('body').appendChild(topHeading)
 
-const eachTodo = myTodos.forEach(function(todo){
-  const para = document.createElement('p')
-  para.textContent = todo.text
-  document.querySelector('body').appendChild(para)
-})
+
 
 
 document.querySelector('#add-btn').addEventListener('click', function(e){
   console.log('Todo added')
 })
-
-document.querySelector('#add-todo').addEventListener('input', function(e){
-  console.log(e.target.value)
-})
+//  
