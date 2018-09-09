@@ -59,3 +59,11 @@
 ##Day 16 September 5
 **Todays work** DOM Contd
 **Thoughts**I dived into advanced DOM quering which comprises of targeting elements using their id's and classes. ID's are unique identifier that you give to your elements, they are unique at least one element in your page,multiple elements can have the same class
+
+##Day17 September 6
+**Todays work**DOM Contd
+**Thoughts** I started rendering my filtered data for both my journal app and todo app by saving it in an object and setting up the function to re-render when there is a change. 
+
+##Day 18 September 7
+**Todays work** Set up the search filter for the todo app
+**Thoughts** Wired up the filter search text for the todo app, same set up for the journal app
