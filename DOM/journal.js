@@ -40,10 +40,12 @@ const renderMovies = function(movie,filters){
     return movie.name.toLowerCase().includes(filters.searchText.toLowerCase())
   })
   
+
+  document.querySelector('#journal').innerHTML = ''//To clear out of date data
   filteredMovies.forEach(function(movie){
     const movieEl = document.createElement('p')
     movieEl.textContent = movie.name
-    document.querySelector('body').appendChild(movieEl)
+    document.querySelector('#journal').appendChild(movieEl)
   })
 }
 renderMovies(movies,filters)
