@@ -55,7 +55,15 @@ document.querySelector('#add-todo').addEventListener('input', function(e){
 })
 
 
-
+document.querySelector('#myForm').addEventListener('submit', function(e){
+  e.preventDefault()
+  myTodos.push({
+    text: e.target.elements.todosName.value,
+    completed: false
+  })
+  renderTodos(todos, filters)
+  e.target.elements.todosName.value = ''
+})
 
 
 document.querySelector('#add-btn').addEventListener('click', function(e){

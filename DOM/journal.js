@@ -5,15 +5,15 @@ heading.textContent = "Second heading"
 document.querySelector('body').appendChild(heading)
 
 
-document.querySelector('#first-btn').addEventListener('click', function(e){
-  console.log('You clicked me')
-})
+// document.querySelector('#first-btn').addEventListener('click', function(e){
+//   console.log('You clicked me')
+// })
 
-document.querySelector('#second-btn').addEventListener('click', function(e){
-  document.querySelectorAll('.journal').forEach(function(journal){
-    journal.remove()
-  })
-})
+// document.querySelector('#second-btn').addEventListener('click', function(e){
+//   document.querySelectorAll('.journal').forEach(function(journal){
+//     journal.remove()
+//   })
+// })
 
 
 const movies = [
@@ -53,4 +53,14 @@ renderMovies(movies,filters)
 document.querySelector('#search-text').addEventListener('input', function(e){
   filters.searchText = e.target.value
   renderMovies(movies,filters)//Function to re-render when the input changes
+})
+document.querySelector('#form').addEventListener('submit', function(e){
+  e.preventDefault()
+  movies.push({
+    name: e.target.elements.firstJournal.value,
+    producer: 'John Doe'
+  })
+  renderMovies(movies, filters)
+  e.target.elements.firstJournal.value = ''
+
 })
