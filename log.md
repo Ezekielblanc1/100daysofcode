@@ -65,5 +65,5 @@
 **Thoughts** I started rendering my filtered data for both my journal app and todo app by saving it in an object and setting up the function to re-render when there is a change. 
 
 ##Day 18 September 7
-**Todays work** Set up the search filter for the todo app
-**Thoughts** Wired up the filter search text for the todo app, same set up for the journal app
+**Todays work** Set up the search filter for the todo app and added forms to both apps
+**Thoughts** Wired up the filter search text for the todo app, same set up for the journal app. Learnt about forms and how to us it to structure our input tags. Looked at the name attribute which is something you put on your fields when they are inside a form which makes it easy to access the data in the field when the form gets submitted. I also looked at a special property on the dom element which is elements which is going to allow us to access the fields we have set up
