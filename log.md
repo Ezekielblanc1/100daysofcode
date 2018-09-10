@@ -67,3 +67,10 @@
 ##Day 18 September 7
 **Todays work** Set up the search filter for the todo app and added forms to both apps
 **Thoughts** Wired up the filter search text for the todo app, same set up for the journal app. Learnt about forms and how to us it to structure our input tags. Looked at the name attribute which is something you put on your fields when they are inside a form which makes it easy to access the data in the field when the form gets submitted. I also looked at a special property on the dom element which is elements which is going to allow us to access the fields we have set up
+
+
+##Day 19 September 8 , Saturday
+
+**Today's work**: Continued with the todo app
+
+**Thoughts** Added the label to the checkbox which helped for accessibility and also the propert on e for checked that we use to get the value is the checked prop which is a boolean also set up the select drop down for the journal app much like the text based input to read data off the select we use the value prop on the e.target
