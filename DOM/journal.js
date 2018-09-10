@@ -1,8 +1,8 @@
 
 
-const heading = document.createElement('h2');
-heading.textContent = "Second heading"
-document.querySelector('body').appendChild(heading)
+// const heading = document.createElement('h2');
+// heading.textContent = "Second heading"
+// document.querySelector('body').appendChild(heading)
 
 
 // document.querySelector('#first-btn').addEventListener('click', function(e){
@@ -63,4 +63,8 @@ document.querySelector('#form').addEventListener('submit', function(e){
   renderMovies(movies, filters)
   e.target.elements.firstJournal.value = ''
 
+})
+
+document.querySelector('#select-by').addEventListener('change', function(e){
+  console.log(e.target.value)
 })

@@ -18,14 +18,19 @@ const myTodos = [
 ]
 
 const filters = {
-  serachText: ''
+  searchText: '',
+  hideCompleted: false
 }
 
 
 const renderTodos = function(todos, filters){
-  let filteredTodos = myTodos.filter(function(todo){
-    return todo.text.toLowerCase().includes(filters.serachText.toLowerCase())
+  const filteredTodos = myTodos.filter(function(todo){
+    const searchTextMatch = todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
+    const hideCompletedMatch = !filters.hideCompleted || !todo.completed
+
+    return searchTextMatch && hideCompletedMatch
   })
+
   const incompleteTodos = filteredTodos.filter(function(todo){
     return !todo.completed
   })
@@ -50,7 +55,7 @@ renderTodos(myTodos, filters)
 
 document.querySelector('#add-todo').addEventListener('input', function(e){
   // console.log(e.target.value)
-  filters.serachText = e.target.value
+  filters.searchText = e.target.value
   renderTodos(myTodos, filters)
 })
 
@@ -64,6 +69,12 @@ document.querySelector('#myForm').addEventListener('submit', function(e){
   renderTodos(todos, filters)
   e.target.elements.todosName.value = ''
 })
+
+document.querySelector('#Hide-completed').addEventListener('change', function(e){
+  filters.hideCompleted = e.target.checked
+  renderTodos(todos, filters)
+})
+
 
 
 document.querySelector('#add-btn').addEventListener('click', function(e){
