@@ -74,3 +74,9 @@
 **Today's work**: Continued with the todo app
 
 **Thoughts** Added the label to the checkbox which helped for accessibility and also the propert on e for checked that we use to get the value is the checked prop which is a boolean also set up the select drop down for the journal app much like the text based input to read data off the select we use the value prop on the e.target
+
+##Day 20 September 9, Sunday
+
+**Today's work**: Working with local storage
+
+**Thoughts** Got to understand how to use the CRUD operations to save data in the local storage, you stringify before you write the data and parse just after you read the data
