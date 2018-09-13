@@ -1,39 +1,17 @@
 
-
-// const heading = document.createElement('h2');
-// heading.textContent = "Second heading"
-// document.querySelector('body').appendChild(heading)
-
-
-// document.querySelector('#first-btn').addEventListener('click', function(e){
-//   console.log('You clicked me')
-// })
-
-// document.querySelector('#second-btn').addEventListener('click', function(e){
-//   document.querySelectorAll('.journal').forEach(function(journal){
-//     journal.remove()
-//   })
-// })
-
-
-const movies = [
-  {
-    name: "Things fall apart",
-    producer: "John Doe"
-  },
-  {
-    name: "Many years Ago",
-    producer: "Mark ken"
-  },
-  {
-    name: "Gods not Dead",
-    producer: "Resy Duke"
-  }
-]
+let movies = []
 
 const filters = {
   searchText: ''
 }
+
+const movieJSON = localStorage.getItem('movie')
+
+if(movieJSON !== null){
+  movies = JSON.parse(movieJSON)
+}
+
+
 
 const renderMovies = function(movie,filters){
   const filteredMovies = movies.filter(function(movie){
@@ -44,7 +22,13 @@ const renderMovies = function(movie,filters){
   document.querySelector('#journal').innerHTML = ''//To clear out of date data
   filteredMovies.forEach(function(movie){
     const movieEl = document.createElement('p')
-    movieEl.textContent = movie.name
+
+    if(movie.name.length > 0){
+      movieEl.textContent = movie.name
+    }else{
+      movieEl.textContent = 'Unnamed note'
+    }
+    
     document.querySelector('#journal').appendChild(movieEl)
   })
 }
@@ -60,10 +44,12 @@ document.querySelector('#form').addEventListener('submit', function(e){
     name: e.target.elements.firstJournal.value,
     producer: 'John Doe'
   })
+  localStorage.setItem('movie', JSON.stringify(movies))
   renderMovies(movies, filters)
   e.target.elements.firstJournal.value = ''
 
 })
+
 
 document.querySelector('#select-by').addEventListener('change', function(e){
   console.log(e.target.value)

@@ -1,25 +1,14 @@
-const myTodos = [
-  {
-    text: 'Write some code',
-    completed: true
-  },
-  {
-    text: "Visit udacity to complete Js tutorial",
-    completed: false
-  },
-  {
-    text: "Read Kyle Simpson's You don't know javascript",
-    completed: true
-  },
-  {
-    text: "Continue with my 100daysofCode",
-    completed: false
-  }
-]
+let myTodos = [];
 
 const filters = {
   searchText: '',
   hideCompleted: false
+}
+
+const todoJSON = localStorage.getItem('todo')
+
+if(todoJSON !== null){
+  myTodos = JSON.parse(todoJSON)
 }
 
 
@@ -44,7 +33,13 @@ const renderTodos = function(todos, filters){
 
   filteredTodos.forEach(function(todo){
     const todoEl = document.createElement('p')
-    todoEl.textContent = todo.text
+
+    if(todo.text.length > 0){
+      todoEl.textContent = todo.text
+    }else{
+      todoEl.textContent = 'Unnamed todo'
+    }
+  
     document.querySelector('#todos').appendChild(todoEl)
   })
 }
@@ -66,6 +61,8 @@ document.querySelector('#myForm').addEventListener('submit', function(e){
     text: e.target.elements.todosName.value,
     completed: false
   })
+
+  localStorage.setItem('todo', JSON.stringify(myTodos))
   renderTodos(todos, filters)
   e.target.elements.todosName.value = ''
 })
