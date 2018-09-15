@@ -75,8 +75,21 @@
 
 **Thoughts** Added the label to the checkbox which helped for accessibility and also the propert on e for checked that we use to get the value is the checked prop which is a boolean also set up the select drop down for the journal app much like the text based input to read data off the select we use the value prop on the e.target
 
-##Day 20 September 9, Sunday
+##Day 20 September 9, Sunday 
 
 **Today's work**: Working with local storage
 
 **Thoughts** Got to understand how to use the CRUD operations to save data in the local storage, you stringify before you write the data and parse just after you read the data
+
+ ##Day 21 September 10
+ **Todays's work** : Code refactoring
+
+ **Thoughts** Seperated the code into function calls in a seperate file for code readability and clean code. It is important to know that when you split your files they share a single global namespace
+
+ ##Day 22 September 11
+ **Today's work** : Debugging my application
+
+ **Thoughts**Console.log's are good in knowing where your program went wrong but it is more ideal to use debugger 
+
+ ##Day 23 September 12
+ **Today's work** : Complex DOM rendering and setting up a third party library which is basically a javascript code that somebody else wrote.Eg UUID which means universally unique identifier
