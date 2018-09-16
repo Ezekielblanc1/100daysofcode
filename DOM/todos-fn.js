@@ -24,7 +24,7 @@ const renderTodos = function(todos, filters){
 
     return searchTextMatch && hideCompletedMatch
   })
-  debugger
+
   const incompleteTodos = filteredTodos.filter(function(todo){
     return !todo.completed
   })
@@ -40,6 +40,17 @@ const renderTodos = function(todos, filters){
   })
 }
 
+//Toggle the completed value
+
+const toggleTodo = function(id){
+  const todo = myTodos.find(function(todo){
+    return todo.id === id
+  })
+  if(todo !== undefined){
+    todo.completed = !todo.completed
+  }
+}
+
 const generateTodoDOM = function(todo){
   const mainEl = document.createElement('div')
   const todoCheckBox = document.createElement('input')
@@ -49,6 +60,13 @@ const generateTodoDOM = function(todo){
   //Set up the todo checkbox
   todoCheckBox.setAttribute('type', 'checkbox')
   mainEl.appendChild(todoCheckBox)
+
+  todoCheckBox.checked = todo.completed
+  todoCheckBox.addEventListener('change', function(){
+    toggleTodo(todo.id)
+    saveTodos(myTodos)
+    renderTodos(myTodos, filters)
+  })
  
   //Set up todo text
   if(todo.text.length > 0){

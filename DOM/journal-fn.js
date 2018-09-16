@@ -30,7 +30,7 @@ const saveMovie = function(movie){
 
 const generateDOM = function(movie){
   const movieEl = document.createElement('div')
-  const textEl = document.createElement('span')
+  const textEl = document.createElement('a')
   const button = document.createElement('button')
   //Set up the remove buton
   button.textContent = 'x'
@@ -47,7 +47,8 @@ const generateDOM = function(movie){
   }else{
     textEl.textContent = 'Unnamed movie'
   }
-
+textEl.setAttribute('href','edit.html')
+  
   movieEl.appendChild(textEl)
   return movieEl
   
