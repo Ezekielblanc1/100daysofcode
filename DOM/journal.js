@@ -13,7 +13,6 @@ document.querySelector('#search-text').addEventListener('input', function(e){
 document.querySelector('#form').addEventListener('submit', function(e){
   e.preventDefault()
   movies.push({
-    id: uuid(),
     name: e.target.elements.firstJournal.value,
     producer: 'John Doe'
   })
