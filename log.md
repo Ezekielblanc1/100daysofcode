@@ -93,3 +93,7 @@
 
  ##Day 23 September 12
  **Today's work** : Complex DOM rendering and setting up a third party library which is basically a javascript code that somebody else wrote.Eg UUID which means universally unique identifier
+
+
+##Day 24 September 13
+**Todays work** : Modified the todo checkbox to work with the data saved in local storage
