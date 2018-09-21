@@ -47,7 +47,7 @@ const generateDOM = function(movie){
   }else{
     textEl.textContent = 'Unnamed movie'
   }
-textEl.setAttribute('href','edit.html')
+textEl.setAttribute('href',`edit.html#${movie.id}`)
   
   movieEl.appendChild(textEl)
   return movieEl
