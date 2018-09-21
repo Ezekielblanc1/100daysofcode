@@ -97,3 +97,11 @@
 
 ##Day 24 September 13
 **Todays work** : Modified the todo checkbox to work with the data saved in local storage
+
+##Day 25 September 14
+**Todays work**: Edited the note and todo app
+**Thoughts** I realized that you can add hyper links in js with the setAttribute property where you specify the href and the page you want to visit once you click the link
+
+##Day 26 September 15
+**Todays work**: Worked on switching between pages based on user interactions
+**Thoughts**: The location object which is provided by the browser just like document object.The location object provides us with the assign method which takes a string value which is the sam you would put in a href value. The location.assign() is a function that takes a single argument the url you are trying to go to
