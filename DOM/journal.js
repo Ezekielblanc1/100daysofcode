@@ -12,12 +12,14 @@ document.querySelector('#search-text').addEventListener('input', function(e){
 })
 document.querySelector('#form').addEventListener('submit', function(e){
   e.preventDefault()
+  const id = uuidv4()
   movies.push({
+    id: id,
     name: e.target.elements.firstJournal.value,
     producer: 'John Doe'
   })
   saveMovie(movies)
-  renderMovies(movies, filters)
+  location.assign(`edit.html#${id}`)
   e.target.elements.firstJournal.value = ''
 
 })
