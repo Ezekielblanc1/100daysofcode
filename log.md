@@ -103,5 +103,9 @@
 **Thoughts** I realized that you can add hyper links in js with the setAttribute property where you specify the href and the page you want to visit once you click the link
 
 ##Day 26 September 15
-**Todays work**: Worked on switching between pages based on user interactions
+**Todays work**: Worked on switching between pages based on user interactions on the journal app
 **Thoughts**: The location object which is provided by the browser just like document object.The location object provides us with the assign method which takes a string value which is the sam you would put in a href value. The location.assign() is a function that takes a single argument the url you are trying to go to
+
+##Day 27 September 16
+**Todays work**: Listening to changes in local storage which will allow me to keep my tabs in sync and working with javascript dates
+**Thoughts**: Worked with another global variable provided by the browser which contains all sorts of things related to the browser window and all most of the browser variables i have used so far. In fact all of the global variables live on windows.While working with dates the getFullMonth is zero indexed
