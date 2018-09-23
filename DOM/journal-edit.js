@@ -29,3 +29,4 @@ removeElement.addEventListener('click', function(){
   saveMovie(movies)
   location.assign('index.html')
 })
+
