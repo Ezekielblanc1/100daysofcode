@@ -109,3 +109,7 @@
 ##Day 27 September 16
 **Todays work**: Listening to changes in local storage which will allow me to keep my tabs in sync and working with javascript dates
 **Thoughts**: Worked with another global variable provided by the browser which contains all sorts of things related to the browser window and all most of the browser variables i have used so far. In fact all of the global variables live on windows.While working with dates the getFullMonth is zero indexed
+
+##Day 28 September 18
+**Today's work**: Continue with javascript dates and Moments
+**Thoughts** Working with dates can be awkward and clunky and can most times not be user friendly
