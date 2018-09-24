@@ -113,3 +113,7 @@
 ##Day 28 September 18
 **Today's work**: Continue with javascript dates and Moments
 **Thoughts** Working with dates can be awkward and clunky and can most times not be user friendly
+
+##Day 29 September 19
+**Today's work**: Integrating Moment into the journal app
+**Thoughts** The moment library is such a useful one because it makes working with native date object easy to understand
