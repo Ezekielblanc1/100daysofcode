@@ -70,3 +70,9 @@ const renderMovies = function(movie,filters){
   })
 }
 
+//Generate Timestamp
+
+const generateTimeStamp = function(Timestamp){
+  return `Last edited ${moment(Timestamp).fromNow()}`
+}
+
