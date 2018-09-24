@@ -13,10 +13,13 @@ document.querySelector('#search-text').addEventListener('input', function(e){
 document.querySelector('#form').addEventListener('submit', function(e){
   e.preventDefault()
   const id = uuidv4()
+  const timeStamp = moment.valueOf()
   movies.push({
     id: id,
     name: e.target.elements.firstJournal.value,
-    producer: 'John Doe'
+    producer: 'John Doe',
+    createdAt: timeStamp,
+    updatedAt: timeStamp
   })
   saveMovie(movies)
   location.assign(`edit.html#${id}`)
