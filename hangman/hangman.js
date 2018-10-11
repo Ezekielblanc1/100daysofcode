@@ -57,6 +57,7 @@ Hangman.prototype.statusMessage = function () {
   }
 }
 
+
 Hangman.prototype.makeGuess = function (guess) {
   guess = guess.toLowerCase()
   const uniqueGuess = !this.guessedLetters.includes(guess)
