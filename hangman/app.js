@@ -3,7 +3,8 @@ const puzzleEl = document.querySelector('#game-puzzle')
 const guessEl = document.querySelector('#game-guess') 
 const result = new Hangman('React', 3)
 puzzleEl.textContent = result.getPuzzle()
-guessEl.textContent = result.statusMessage()
+guessEl.textContent = result.statusMessage();
+
 
 
 window.addEventListener('keypress', (e) => {
