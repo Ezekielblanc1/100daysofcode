@@ -169,3 +169,11 @@
 
 ##Day 44 October 3
 **Today's work**: To render the status message on the browser based on user interaction
+
+##Day 45 October 4
+**Today's work**: Working with the class Syntax and restructuring the hangman constructor function to using classes
+**Thoughts** Class is the alternative way of writing our constructor function, more like a more better way of structuring the constructor function
+
+##Day 46 October 5
+**Today's work**: Working with sub classes
+**Thoughts**: In classes we can create multiple subclasses with the extend reserved word which let's us borrow the functionalities of the Parent class with the super function which gives us access to the Properties or arguments of the parent class,we can overide methods too
