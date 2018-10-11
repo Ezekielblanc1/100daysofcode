@@ -117,3 +117,55 @@
 ##Day 29 September 19
 **Today's work**: Integrating Moment into the journal app
 **Thoughts** The moment library is such a useful one because it makes working with native date object easy to understand
+
+##Day 30 September 20
+**Today's work**: Adding some finishing touches to the journal app
+**Thoughts** Being able to sort based on when the journal was last edited was what got me in love with working with moments
+
+
+##Day 31 September 21
+**Today's work**: Review the journal app for any bugs found out that the uuid stopped generating id's due to the way i loaded in the script in my function file
+
+##Day 32 September 22
+**Today's work**: Arrow Function
+**Thoughts**: One of the great diffrence with the arrow function is the short hand syntax
+
+##Day 33 September 23
+**Today's work**: Using the ternary operator to structure simple conditionals
+**Thoughts** The ternary or conditional operator is a clean way of writing most simple conditional statements not entirely an alternative to the if else statements tho
+
+##Day 34 September 24
+**Today's work**: Truthy and falsy values in javascript
+**Thoughts** The thing that goes into  the if statement is a boolean, when checking for the presence or absence of something that should be considered a truthy or falsy value
+
+#Day 36 September 25
+**Todays's work**: Type coercion
+**Thoughts**: Because Javascript is a loosely typed language therefore most times it tries to convert data types into what it assumes you want
+
+##Day 37 September 26
+**Today's work**: Handling errors with Try catch and a quick dive into OOP(object oriented programming)
+**Thoughts**: Most at times we run into errors that break our program or cause it to behave inappropraitely but with tracking errors with the try catch we can be able to spot the error while not entirely affecting the application
+
+##Day 38 September 27
+**Todays work**: OOP
+**Thoughts** Object oriented programming, which is basically a programming concept that is based on a particular concept the importance of this concept cannot be overemphasized
+
+##Day 39 September 28
+**Todays work**: Constructor function, Prototypal inheritance
+**Thoughts**: Basically function used with the new keyword can be referred to as constructor functions,the new keyword generates a new object for the new instance, Which gives us access to that object in the constructor function via the this value which we use to customize the constructor function
+
+##Day 40 September 29
+**Today's work**: Working on the Hangman game
+**Thoughts**: Started the functionalities the hangman game exposed me to the power of constructor function and Prototype
+
+##Day 41 September 30
+**Today's work**: Continued on the game, the ability to make a guess
+
+##Day 42 October 1
+**Today's work**: Removed the dummy guess array to allow guesses from the user to come from clicking any key on the keyboard, using the window object
+
+##Day 43 October 2
+**Today's work**: Tracking the status of the player, which is either playing, failed or finished, set up the methods to execute that
+
+##Day 44 October 3
+**Today's work**: To render the status message on the browser based on user interaction
