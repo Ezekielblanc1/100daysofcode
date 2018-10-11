@@ -21,3 +21,4 @@ const people = [{
 
 const persons = people.find((person)=> person.age === 37)
 console.log(persons.name)
+
