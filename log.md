@@ -177,3 +177,7 @@
 ##Day 46 October 5
 **Today's work**: Working with sub classes
 **Thoughts**: In classes we can create multiple subclasses with the extend reserved word which let's us borrow the functionalities of the Parent class with the super function which gives us access to the Properties or arguments of the parent class,we can overide methods too
+
+##Day 47 October 6
+**Today's work** Javascript Custom Getters and setters
+**Thoughts**: Custom getters and setters allow us to customize when you set an object property or set it's value
