@@ -71,3 +71,4 @@ const summary = new Student('George', 'Ken', 54, 98, []);
 console.log(summary.getBio())
 summary.updateGrade(-30);
 console.log(summary.getBio())
+
