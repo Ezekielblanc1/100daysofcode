@@ -180,4 +180,18 @@
 
 ##Day 47 October 6
 **Today's work** Javascript Custom Getters and setters
-**Thoughts**: Custom getters and setters allow us to customize when you set an object property or set it's value
+**Thoughts**: Custom getters and setters allow us to customize when you set an object property or set it's value, allows us to perform data validation and sanitization
+
+##Day 48 October 7
+**Today's work**: Introduction to Asynchronous Javascript
+**Thoughts**: In working with third party server, in other to set up this communication between the browser and server all i can do is to issue a HTTP request, HTTP is a request response protocol
+Request basically signifying what i want to do an response, indicates what was actually done, websocket allows us to communicate between two things in real time
+
+
+##Day 49 October 8
+**Today's work**: More on HTTP request
+**Thoughts**: The open method on the request initializes the request it takes the http method and the url, while send is used to send off request to the server, I also learnt that every HTTP request comes with a status
+
+##Day 50 
+**Today's work** : Call back Function && Abstraction
+**Thoughts**: Basically a call back is when you pass a function into another function as an argument
